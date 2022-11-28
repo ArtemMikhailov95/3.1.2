@@ -22,8 +22,7 @@ public class UserService {
     }
 
     public User read(int id) {
-        User user = userDAO.findById(id).orElse(null);
-        return user;
+        return userDAO.findById(id).orElse(null);
     }
 
     public List<User> readAll() {
